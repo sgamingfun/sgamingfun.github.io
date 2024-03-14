@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enabled Link with Embedded iframe</title>
+    <style>
+        /* Style for the full-screen button */
+        .fullscreen-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,6 +25,22 @@
     <iframe src="https://y8.com/embed/slope" scrolling="no" style="width: 100%; height: 100vh; border: 0; margin: 0; padding: 0;"></iframe>
 </a>
 
+<!-- Full-screen button -->
+<button class="fullscreen-button" onclick="toggleFullScreen()">Full Screen</button>
+
+<script>
+    // Function to toggle full screen
+    function toggleFullScreen() {
+        const iframe = document.querySelector('iframe');
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) { // Firefox
+            iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+            iframe.webkitRequestFullscreen();
+        }
+    }
+</script>
+
 </body>
 </html>
-
