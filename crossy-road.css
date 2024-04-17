@@ -1136,15 +1136,15 @@
 }
 
 .crossy-road-container {
-  width: 100%;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
   display: flex;
-  overflow: auto;
-  min-height: 100vh;
+  overflow: hidden; /* Hide overflow content */
   align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center; /* Center the content horizontally and vertically */
   background-color: var(--dl-color-primary-1);
 }
+
 .crossy-road-iframe {
   width: 85%;
   height: 700px;
