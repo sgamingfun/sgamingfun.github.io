@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  </style>
+</head>
+<body>
+  <div class="moto-x3m-container">
+
+
+<iframe
+          src="https://webglmath.github.io/moto-x3m/"
+          class="moto-x3m-iframe"
+        ></iframe>
+<style>
+   .moto-x3m-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</body>
+</html>
